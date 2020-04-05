@@ -21,19 +21,30 @@ file(GLOB_RECURSE sources
     ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
 
 # Custom-build event
-set(baba_is_auto_header_gen_py ${root_dir}/Scripts/header_gen.py)
-add_custom_command(
-    COMMAND python ${baba_is_auto_header_gen_py}
-    DEPENDS ${headers}
-    OUTPUT ${root_dir}/Includes/AlphaTFT.hpp
-)
-add_custom_target(baba_is_auto_header_gen_py ALL
-    DEPENDS ${root_dir}/Includes/AlphaTFT.hpp)
+if (CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
+    set(alphatft_header_gen_py ${root_dir}/Scripts/header_gen.py)
+    add_custom_command(
+        COMMAND python ${alphatft_header_gen_py}
+        DEPENDS ${headers}
+        OUTPUT ${root_dir}/Includes/AlphaTFT.hpp
+    )
+    add_custom_target(alphatft_header_gen_py ALL
+        DEPENDS ${root_dir}/Includes/AlphaTFT.hpp)
+else ()
+    set(alphatft_header_gen_py ${root_dir}/Scripts/header_gen.py)
+    add_custom_command(
+        COMMAND python3 ${alphatft_header_gen_py}
+        DEPENDS ${headers}
+        OUTPUT ${root_dir}/Includes/AlphaTFT.hpp
+    )
+    add_custom_target(alphatft_header_gen_py ALL
+        DEPENDS ${root_dir}/Includes/AlphaTFT.hpp)
+endif ()
 
 # Build library
 add_library(${target}
     ${sources})
-add_dependencies(${target} baba_is_auto_header_gen_py)
+add_dependencies(${target} alphatft_header_gen_py)
 
 # Project options
 set_target_properties(${target}
