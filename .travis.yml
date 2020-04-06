@@ -12,8 +12,7 @@ matrix:
             - g++-7
         sonarcloud:
           organization: "utilforever-github"
-          token:
-            secure: "GQ+WZTOPGHoEgnnpsBBh8XWvZuEyA5efeBp52hiWa74dfwIyXIGXEkBK3No0gIOcOg3SYT/hmf5oZXytYsbhlI+J95SAz0fH54MlcdMWBGuMPxw3bPxGjgucZJJp/VVulW+bRDHfnEQIHfLDEtLNePI+kU9GgXbdjMN6W6CMC6XVtXzgMQ2dnc81bqNk1EOuYW75m/C2akdXt6r8cmwZ9MMTbtakYvol+uMGvmyNaTSMdaefsndlEwCUiyqiSrUx8F55gmeyShixpldIqxoobyiJTfLjQzPcjOD8oEm39p9l4h7cQrjRn4nAPOZ6YWi8nt9aCWU4S2D4z3pPXicOBOqPG8jiIwJQaETszm0I3wZmf8qd9p2r2j0tjE1hsdfvtmArSCJ9j4JeSYSe5UfGio6nls6rmt8FEiUv82vGlfQm9AhaJgp6JRFFK3pMHw7hRGPl8+NdCsPmjm6a9j3rI+egmIPF7XhdxGadMSPQlCVlCr3BCfCMpfVFSatGF4oWWKEVo4drXEG2lvtIc3WV41/GSsPHfo5WORZkrw8b7l0ygkFDKagh0nCdlPusUx4KGgGA7OJ4n+sgw8QtbkcTm4tsmgwAXGkeaJS0QD0jG/o+ds/I+KAGCKVhm8HS8J7tT2YtimipLMR1IRSbkXT1t3RaKiE/DnP7LGhM/P9Gm0E="
+          token: "vJWH/ltLGOx/soGoqJfH4CcIew5LligZlHfENTbU6PYCl2xpF2EQi5+8+R78+ow49R1s61XF3GEG98WbLHd/dP60I9/QbAH3mf5apF+7mT7gL+xNGLw5++dWhwkZUwgKHPl9OX/Cru9l/kk8EEPyLr7EET6KLBeYPEH1CcH5qtT/WnSDx7bD2bhEGBHqgibkIIdpV5CxW0EpNmM0cpaFBjqCXc+XZHjFPkDlP5MkfXBrliRnnNQZfTW1A/K/sgr4b8D+itzruvM3tymlnKw//yF5TjMy5VE2AIX2kTdqQne6e7+4U0MLcs6uY81k4IBaxieSGkvee77QXJUDDziq47Ma2NOQ7rFWQB9qeiVwDS0TUTEro4hNDgzgbDOedx+jPwxIyDcGMEocAnwj6uf9HpVXe6CQvEaLunjWh/YWteKn/Hz9kxxj7tiP5q0znTTm4aH0UCgcbjbAiYjdKOO4D+MnHt+qHnmYKpGX0dMfbL90GBRwFtmfLhdzCe/VYx+IvM8DT7g/qjcuAaVfwDW93mmzTbZh48K+aYQGDu3e0bg8pWnidsr6QtpQjNEMlXIh55z6sDEqa1anJM6QUmSD6d9B9YMr4bf8i3iNJqPC0TFVachHXYE1eidOb84Tuu0G5aB7fXa8ASeEQV50euv14S8GYyPUYUG7gzvLf1YAgzc="
       dist: xenial
       sudo: required
       compiler: gcc
